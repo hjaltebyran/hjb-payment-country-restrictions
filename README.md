@@ -1,69 +1,74 @@
 # HJB Payment Country Restrictions
 
-**Developed by [Hjältebyrån](https://hjaltebyran.se)**
+> Ett WooCommerce-plugin utvecklat av [Hjältebyrån](https://hjaltebyran.se) — digitalbyrån som hjälper företag att växa online.
 
-Ett WooCommerce-plugin som låter dig styra vilka betalningsmetoder som visas baserat på kundens land — med stöd för whitelist, blacklist och regioner.
+Styr vilka betalningsmetoder som visas i kassan baserat på kundens land. Perfekt för butiker som säljer till flera marknader och behöver anpassa betalningsflödet per land eller region.
 
 ---
 
-## Vad gör pluginet?
+## Funktioner
 
-- Visa eller dölj valfria betalningsmetoder per land eller region
-- Stöd för whitelist (endast tillåtna länder) och blacklist (blockerade länder)
-- Inbyggda regioner: Norden, EU, EEA med flera
-- Landväljare i kassan med modal vid första besök
-- Svea Checkout-integration: kassan neutraliseras automatiskt för länder där Svea inte är tillgängligt, baserat på dina inställningar
+- Whitelist eller blacklist valfria betalningsmetoder per land
+- Välj enskilda länder eller fördefinierade regioner (Norden, EU, EEA m.fl.)
+- Landväljare med modal visas automatiskt i kassan vid första besök
+- Svea Checkout-integration: kassan neutraliseras automatiskt för länder där Svea inte är aktiverat — baserat på dina egna inställningar, ingen hårdkodad lista
+- Stöder WooCommerce HPOS (High-Performance Order Storage)
 
 ---
 
 ## Krav
 
-- WordPress 5.8 eller senare
-- WooCommerce 6.0 eller senare
-- PHP 7.4 eller senare
+| Krav | Version |
+|---|---|
+| WordPress | 5.8 eller senare |
+| WooCommerce | 6.0 eller senare |
+| PHP | 7.4 eller senare |
 
 ---
 
 ## Installation
 
-1. Ladda ned pluginet via er kundportal
+1. Ladda ned den senaste versionen som `.zip`-fil
 2. Gå till **WordPress-admin → Plugins → Lägg till nytt → Ladda upp plugin**
-3. Välj den nedladdade `.zip`-filen och klicka **Installera nu**
-4. Aktivera pluginet
-5. Gå till **WooCommerce → Betalningsrestriktioner** för att konfigurera regler per betalningsmetod
+3. Välj `.zip`-filen och klicka **Installera nu**
+4. Klicka **Aktivera plugin**
+5. Gå till **WooCommerce → Betalningsrestriktioner** för att konfigurera
 
 ---
 
 ## Konfiguration
 
-Under **WooCommerce → Betalningsrestriktioner** visas alla aktiva betalningsmetoder. För varje metod kan du:
+Under **WooCommerce → Betalningsrestriktioner** listas alla aktiva betalningsmetoder. För varje metod väljer du:
 
-| Inställning | Beskrivning |
+| Läge | Beskrivning |
 |---|---|
-| Ingen begränsning | Betalningsmetoden visas för alla länder |
-| Whitelist | Visas **bara** för valda länder/regioner |
-| Blacklist | Döljs för valda länder/regioner |
+| Ingen begränsning | Visas för alla länder (standard) |
+| Whitelist | Visas **endast** för valda länder/regioner |
+| Blacklist | **Döljs** för valda länder/regioner |
 
-Länder kan väljas individuellt eller via fördefinierade regioner (Norden, EU, EEA osv.).
+Länder kan väljas individuellt eller via en av de inbyggda regionerna.
 
 ---
 
 ## Changelog
 
 ### 1.2.0
-- Svea Checkout-suppression baseras nu dynamiskt på dina whitelist/blacklist-inställningar istället för en hårdkodad landslista
+- Svea Checkout-suppression baseras nu dynamiskt på dina whitelist/blacklist-inställningar — inte längre en hårdkodad landslista
 
 ### 1.1.0
 - Första release
 
 ---
 
-## Support
+## Licens
 
-Detta plugin utvecklas och underhålls av **Hjältebyrån**.
-
-Webbplats: [hjaltebyran.se](https://hjaltebyran.se)
+MIT — fri att använda, modifiera och distribuera. Se [LICENSE](LICENSE) för fullständiga villkor.
 
 ---
 
-*&copy; Hjältebyrån AB*
+## Om Hjältebyrån
+
+Vi är en svensk digitalbyrå med fokus på WooCommerce, WordPress och skräddarsydda webblösningar. Vi bygger det som inte finns färdigt — och ser till att det håller.
+
+**Webb:** [hjaltebyran.se](https://hjaltebyran.se)
+**Mail:** [info@hjaltebyran.se](mailto:info@hjaltebyran.se)

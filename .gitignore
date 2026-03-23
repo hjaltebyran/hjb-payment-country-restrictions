@@ -1,0 +1,8 @@
+# WordPress
+*.log
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.zip
+node_modules/
