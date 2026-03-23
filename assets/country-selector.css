@@ -1,0 +1,171 @@
+/**
+ * HJB Payment Country Restrictions – Country Selector / Modal Styles
+ */
+
+/* ── Hide Svea's own billing country field ────────────────────────────────── */
+#billing_country_field,
+.woocommerce-billing-fields #billing_country_field,
+.woocommerce-shipping-fields #shipping_country_field,
+.sco-country-select,
+.svea-checkout-country,
+[class*="svea"][class*="country"],
+[id*="svea"][id*="country"] {
+    display: none !important;
+}
+
+/* ── Modal overlay ───────────────────────────────────────────────────────── */
+
+.hjb-pgcr-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Backdrop blur if browser supports it */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+/* Hidden state – JS adds this class when confirmed */
+.hjb-pgcr-modal-overlay.hjb-hidden {
+    display: none;
+}
+
+/* ── Modal card ──────────────────────────────────────────────────────────── */
+
+.hjb-pgcr-modal {
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px 48px;
+    max-width: 440px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.hjb-pgcr-modal h2 {
+    margin: 0 0 12px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.hjb-pgcr-modal p {
+    margin: 0 0 28px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ── Select ──────────────────────────────────────────────────────────────── */
+
+.hjb-pgcr-modal-field {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.hjb-pgcr-modal-field label {
+    display: block;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.hjb-pgcr-modal-field select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    background: #fff;
+    cursor: pointer;
+    appearance: auto;
+}
+
+.hjb-pgcr-modal-field select:focus {
+    outline: 2px solid #333;
+    outline-offset: 1px;
+}
+
+/* ── Confirm button ──────────────────────────────────────────────────────── */
+
+.hjb-pgcr-modal-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 32px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    justify-content: center;
+    transition: background 0.15s;
+}
+
+.hjb-pgcr-modal-btn:hover:not(:disabled) {
+    background: #333;
+}
+
+.hjb-pgcr-modal-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+/* Spinner inside button */
+.hjb-pgcr-btn-spinner {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255,255,255,0.4);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: hjb-pgcr-spin 0.6s linear infinite;
+}
+
+@keyframes hjb-pgcr-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ── Country bar (shown after country confirmed) ─────────────────────────── */
+
+.hjb-pgcr-country-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    background: #f5f6f7;
+    border: 1px solid #dde0e3;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.hjb-pgcr-country-bar__label {
+    color: #666;
+}
+
+.hjb-pgcr-country-bar__current {
+    flex: 1;
+}
+
+.hjb-pgcr-country-bar__change {
+    background: none;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 4px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #444;
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.hjb-pgcr-country-bar__change:hover {
+    border-color: #333;
+    color: #111;
+}

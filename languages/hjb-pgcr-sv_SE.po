@@ -1,0 +1,104 @@
+# Swedish translation for HJB Payment Country Restrictions
+# Copyright (C) Hjältebyrån AB
+msgid ""
+msgstr ""
+"Project-Id-Version: HJB Payment Country Restrictions 1.1.0\n"
+"PO-Revision-Date: 2026-02-24\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Select your country"
+msgstr "Välj ditt land"
+
+msgid "Select your country to see the correct shipping options and payment methods."
+msgstr "Välj ditt land för att se rätt fraktalternativ och betalningsmetoder."
+
+msgid "Continue to checkout"
+msgstr "Fortsätt till kassan"
+
+msgid "— Select your country —"
+msgstr "— Välj ditt land —"
+
+msgid "Could not update country. Please try again."
+msgstr "Kunde inte uppdatera landet. Försök igen."
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Shipping country:"
+msgstr "Leveransland:"
+
+msgid "Change country"
+msgstr "Ändra land"
+
+msgid "Invalid country."
+msgstr "Ogiltigt land."
+
+msgid "Security check failed."
+msgstr "Säkerhetskontrollen misslyckades."
+
+msgid "Payment restrictions"
+msgstr "Betalningsrestriktioner"
+
+msgid "HJB Payment Country Restrictions requires WooCommerce to be installed and active."
+msgstr "HJB Payment Country Restrictions kräver att WooCommerce är installerat och aktiverat."
+
+msgid "No active payment methods found in WooCommerce."
+msgstr "Inga aktiva betalningsmetoder hittades i WooCommerce."
+
+msgid "Settings saved!"
+msgstr "Inställningar sparade!"
+
+msgid "Something went wrong while saving."
+msgstr "Något gick fel vid sparning."
+
+msgid "No restrictions"
+msgstr "Inga begränsningar"
+
+msgid "Shown for all countries"
+msgstr "Visas för alla länder"
+
+msgid "Whitelist"
+msgstr "Whitelist"
+
+msgid "Show ONLY for selected countries/regions"
+msgstr "Visa BARA för valda länder/regioner"
+
+msgid "Blacklist"
+msgstr "Blacklist"
+
+msgid "Hide for selected countries/regions"
+msgstr "Dölj för valda länder/regioner"
+
+msgid "Restriction mode"
+msgstr "Restriktionsläge"
+
+msgid "Regions"
+msgstr "Regioner"
+
+msgid "Individual countries"
+msgstr "Enskilda länder"
+
+msgid "Select countries..."
+msgstr "Välj länder..."
+
+msgid "Enabled"
+msgstr "Aktiverad"
+
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+msgid "Save settings"
+msgstr "Spara inställningar"
+
+msgid "Payment restrictions per country"
+msgstr "Betalningsrestriktioner per land"
+
+msgid "Configure which payment methods are available based on the customer's country."
+msgstr "Konfigurera vilka betalningsmetoder som ska vara tillgängliga baserat på kundens land."
+
+msgid "Permission denied."
+msgstr "Behörighet saknas."
