@@ -1,10 +1,10 @@
 # HJB Payment Country Restrictions
 
-> Ett WooCommerce-plugin utvecklat av [Hjältebyrån](https://hjaltebyran.se) — digitalbyrån som hjälper företag att växa online.
-
-Styr vilka betalningsmetoder som visas i kassan baserat på kundens land. Perfekt för butiker som säljer till flera marknader och behöver anpassa betalningsflödet per land eller region.
+**Utvecklat av [Hjältebyrån](https://hjaltebyran.se) — den svenska digitalbyrån för WooCommerce och WordPress.**
 
 ---
+
+Styr vilka betalningsmetoder som visas i kassan baserat på kundens land. Perfekt för butiker som säljer till flera marknader och behöver anpassa betalningsflödet per land eller region.
 
 ## Funktioner
 
@@ -28,7 +28,7 @@ Styr vilka betalningsmetoder som visas i kassan baserat på kundens land. Perfek
 
 ## Installation
 
-1. Ladda ned den senaste versionen som `.zip`-fil
+1. Ladda ned den senaste versionen som `.zip`-fil från [Releases](../../releases/latest)
 2. Gå till **WordPress-admin → Plugins → Lägg till nytt → Ladda upp plugin**
 3. Välj `.zip`-filen och klicka **Installera nu**
 4. Klicka **Aktivera plugin**
@@ -70,5 +70,7 @@ MIT — fri att använda, modifiera och distribuera. Se [LICENSE](LICENSE) för 
 
 Vi är en svensk digitalbyrå med fokus på WooCommerce, WordPress och skräddarsydda webblösningar. Vi bygger det som inte finns färdigt — och ser till att det håller.
 
-**Webb:** [hjaltebyran.se](https://hjaltebyran.se)
-**Mail:** [info@hjaltebyran.se](mailto:info@hjaltebyran.se)
+| | |
+|---|---|
+| **Webb** | [hjaltebyran.se](https://hjaltebyran.se) |
+| **Mail** | [info@hjaltebyran.se](mailto:info@hjaltebyran.se) |
