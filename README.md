@@ -1,6 +1,6 @@
 # HJB Payment Country Restrictions
 
-**Utvecklat av [Hjältebyrån](https://hjaltebyran.se) — den svenska digitalbyrån för WooCommerce och WordPress.**
+**Utvecklat av [Hjältebyrån](https://hjaltebyran.se) 
 
 ---
 
